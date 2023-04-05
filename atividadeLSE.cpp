@@ -122,7 +122,7 @@ struct Lista {
             while(atual != NULL){
                 if(atual->valor == valor){
 
-                    if(anterior == NULL){ // caso estejamos removendo o primeiro elemento
+                    if(anterior == NULL){
 
                         cabeca = atual->prox;
                     } 
@@ -130,7 +130,7 @@ struct Lista {
 
                         anterior->prox = atual->prox;
                     }
-                    if(atual == cauda){ // caso estejamos removendo o último elemento
+                    if(atual == cauda){
                         
                         cauda = anterior;
                     }
